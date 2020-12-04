@@ -17,7 +17,23 @@ module.exports = {
     // Optional: Email
     email: `quanjichun@gmail.com`,
     // Content of the About Me section
-    about: `SDFSDFSDF`,
+    about: [
+      'Javascript',
+      'React',
+      'front-end 개발자',
+      'GraphQL',
+      'Elasticsearch',
+      '중국어',
+      "석사",
+      '책임감이 강함',
+      '팀에서 어려운 모듈 담당',
+      '팀내 신기술 전파자',
+      '신입사원 트레이너',
+      '셀리더',
+      '코딩이 좋아요',
+      'LG전자',
+      '스펙트럼이 넓은 Full-stack 개발자가 목표',
+    ],
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -31,7 +47,7 @@ module.exports = {
             '프로젝트(모델) 개발 관리시스템 구현',
             '업무보고 시스템 구현',
             'Elasticsearch 기반 통합검색 구현',
-            'Task 관리 시스템 구현'
+            'Task 관리 시스템 구현',
           ],
           skills: [
             'Front-end: React, Material-UI, CKEditor, styled-components',
@@ -41,7 +57,7 @@ module.exports = {
           achivement: [
             '현재 ID 개발담당에서 해당 업무시스템을 사용하고 있음',
             'Agile 개발방식과 web fullstack 개발경험을 얻었음.',
-            'GraphQL, Elasticsearch와 같은 up-to-date 개발기술을 익혔음'
+            'GraphQL, Elasticsearch와 같은 up-to-date 개발기술을 익혔음',
           ],
         },
         link: '',
@@ -58,8 +74,9 @@ module.exports = {
     skills: [
       {
         name: 'Programming Languages & Frameworks',
-        description:
-          ['JavaScript (ES6+), Java, Python, Node.js, React, Redux, GraphQL, Koa, Sequelize '],
+        description: [
+          'JavaScript (ES6+), Java, Python, Node.js, React, Redux, GraphQL, Koa, Sequelize ',
+        ],
       },
       {
         name: 'Others',
@@ -76,7 +93,7 @@ module.exports = {
         description: [
           '컴퓨터과학과, 석사, 2012.09 ~ 2014.08',
           'A Hybrid Recommender System Based on AHP That Awares Contexts with Bayesian Networks for Smart TV',
-          '[ 정보과학회 우수논문상 2편 ]'
+          '[ 정보과학회 우수논문상 2편 ]',
         ],
       },
       {

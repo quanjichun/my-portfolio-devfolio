@@ -72,10 +72,13 @@ const Header = ({ metadata = {} }) => {
             </li>
           )}
           {email.length > 0 && (
-            <li className={classes.link}>
-              {email}
+            <li className={classes.item}>
+              <span className={classes.link}>{email}</span>
             </li>
           )}
+          <li className={classes.link}>
+            CHINESE(中国人)
+          </li>
         </ul>
       </div>
     </div>

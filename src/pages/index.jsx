@@ -22,7 +22,7 @@ const Index = ({ data }) => {
     <Layout>
       <SEO />
       <Header metadata={data.site.siteMetadata} />
-      {about && <SectionAbout about={about} />}
+      {about && about.length > 0 && <SectionAbout about={about} />}
       {experience && experience.length && (
         <SectionExperience experience={experience} />
       )}

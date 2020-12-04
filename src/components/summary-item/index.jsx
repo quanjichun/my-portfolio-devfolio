@@ -24,7 +24,13 @@ const SummaryItem = ({ name, description, link = false, internal = false }) => {
       >
         {link ? linkContent : name}
       </h3>
-      <p className={classes.description}>{description}</p>
+      <div className={classes.description}>
+        {
+          description.map((d, index) => (
+            <div key={`${name}_${index}`}>{d}</div>
+          ))
+        }
+      </div>
     </div>
   );
 };

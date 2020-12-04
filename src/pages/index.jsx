@@ -5,31 +5,30 @@ import React from 'react';
 import Header from '../components/header';
 import Layout from '../components/layout';
 import SectionAbout from '../components/section-about';
-import SectionBlog from '../components/section-blog';
 import SectionExperience from '../components/section-experience';
 import SectionProjects from '../components/section-projects';
 import SectionSkills from '../components/section-skills';
+import SectionEducation from '../components/section-education';
 import SEO from '../components/seo';
 
 const Index = ({ data }) => {
   const about = get(data, 'site.siteMetadata.about', false);
   const projects = get(data, 'site.siteMetadata.projects', false);
-  const posts = data.allMarkdownRemark.edges;
   const experience = get(data, 'site.siteMetadata.experience', false);
   const skills = get(data, 'site.siteMetadata.skills', false);
-  const noBlog = !posts || !posts.length;
+  const educations = get(data, 'site.siteMetadata.educations', false);
 
   return (
     <Layout>
       <SEO />
-      <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
+      <Header metadata={data.site.siteMetadata} />
       {about && <SectionAbout about={about} />}
       {experience && experience.length && (
         <SectionExperience experience={experience} />
       )}
       {projects && projects.length && <SectionProjects projects={projects} />}
-      {!noBlog && <SectionBlog posts={posts} />}
       {skills && skills.length && <SectionSkills skills={skills} />}
+      {educations && educations.length && <SectionEducation educations={educations} />}
     </Layout>
   );
 };
@@ -47,9 +46,16 @@ export const pageQuery = graphql`
         author
         github
         linkedin
+        blog
+        email
         projects {
           name
-          description
+          description {
+            content
+            contribution
+            skills
+            achivement
+          }
           link
         }
         experience {
@@ -57,6 +63,10 @@ export const pageQuery = graphql`
           description
         }
         skills {
+          name
+          description
+        }
+        educations {
           name
           description
         }

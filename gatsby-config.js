@@ -3,7 +3,7 @@ module.exports = {
     // Site URL for when it goes live
     siteUrl: `https://phantom-assassin-portfolio/quanjichun`,
     // Your Name
-    name: '전기춘',
+    name: '전기춘(Jichun Quan)',
     // Main Site Title
     title: `Jichun Quan | Front-end Developer`,
     // Description that goes under your name in main bio
@@ -11,56 +11,78 @@ module.exports = {
     // Optional: Github account URL
     github: `https://github.com/quanjichun`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
+    linkedin: ``,
+    // Optional: Blog URL
+    blog: `https://bloodseeker.tistory.com/`,
+    // Optional: Email
+    email: `quanjichun@gmail.com`,
     // Content of the About Me section
-    about: ``,
+    about: `SDFSDFSDF`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
-        description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS \n \
-          A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS \
-          A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS \
-          A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
+        name: 'ID 업무 디지털화(DX) 시스템',
+        description: {
+          content: [
+            '개발자/팀 이슈관리, 프로젝트 개발관리, 업무보고, 업무 데이터(email, voc, rms 등) 수집/분석/visualization, Task 관리, \
+            매출정보 visualization 등 기능을 포함하고 있는 종합업무 시스템',
+          ],
+          contribution: [
+            '프로젝트(모델) 개발 관리시스템 구현',
+            '업무보고 시스템 구현',
+            'Elasticsearch 기반 통합검색 구현',
+            'Task 관리 시스템 구현'
+          ],
+          skills: [
+            'Front-end: React, Material-UI, CKEditor, styled-components',
+            'Back-end: GraphQL, Koa, MySql, Sequelize',
+            'Others: Elasticsearch, Python, JTest',
+          ],
+          achivement: [
+            '현재 ID 개발담당에서 해당 업무시스템을 사용하고 있음',
+            'Agile 개발방식과 web fullstack 개발경험을 얻었음.',
+            'GraphQL, Elasticsearch와 같은 up-to-date 개발기술을 익혔음'
+          ],
+        },
         link: '',
-      },
-      {
-        name: 'ChromeExtensionKit',
-        description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://chromeextensionkit.com/?ref=devfolio',
-      },
-      {
-        name: 'Another Cool Project',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
         name: 'LG 전자',
-        description: 'ID SAT팀, App 개발자, 2014.07 ~ 현재'
-      }
+        description: ['ID SAT팀, App Developer, 2014.07 ~ 현재'],
+      },
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
         name: 'Programming Languages & Frameworks',
         description:
-          'JavaScript (ES6+), Node.js, React, Redux, GraphQL, Koa, Python, Sequelize, Java',
+          ['JavaScript (ES6+), Java, Python, Node.js, React, Redux, GraphQL, Koa, Sequelize '],
       },
       {
-        name: 'Other',
-        description:
-          'Elasticsearch, Git, Agile / Scrum, MySQL',
+        name: 'Others',
+        description: ['Elasticsearch, Git, Agile / Scrum, MySQL'],
       },
       {
         name: 'Language',
-        description: 'Chinese'
-      }
+        description: ['Korean, Chinese, English'],
+      },
+    ],
+    educations: [
+      {
+        name: '연세대학교',
+        description: [
+          '컴퓨터과학과, 석사, 2012.09 ~ 2014.08',
+          'A Hybrid Recommender System Based on AHP That Awares Contexts with Bayesian Networks for Smart TV',
+          '[ 정보과학회 우수논문상 2편 ]'
+        ],
+      },
+      {
+        name: 'Hangzhou Normal University',
+        description: ['SW Engineering, 학사, 2007.09 ~ 2011.08'],
+      },
     ],
   },
   plugins: [

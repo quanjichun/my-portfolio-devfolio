@@ -11,16 +11,21 @@ const classes = {
   contentWrapper: 'flex-none pt-6 md:pt-1 md:flex-1 md:pl-20',
   name: 'text-5xl text-gray-900 font-bold leading-tight hover:text-black',
   description: 'text-gray-600',
-  list: 'mt-6 uppercase tracking-wider',
+  list: 'mt-6 tracking-wider',
   item: 'inline list-none pr-4',
   link:
     'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black',
+  email: ''
 };
 
-const Header = ({ metadata = {}, noBlog = false }) => {
+const Header = ({ metadata = {} }) => {
   const twitter = get(metadata, 'author', false);
   const github = get(metadata, 'github', false);
   const linkedin = get(metadata, 'linkedin', false);
+  const blog = get(metadata, 'blog', false);
+  const email = get(metadata, 'email', false);
+
+  console.log(email);
 
   return (
     <div className={classes.wrapper}>
@@ -41,29 +46,34 @@ const Header = ({ metadata = {}, noBlog = false }) => {
                 className={classes.link}
                 href={`https://twitter.com/${twitter}`}
               >
-                Twitter
+                TWITTER
               </a>
             </li>
           )}
           {github && (
             <li className={classes.item}>
               <a className={classes.link} href={github}>
-                GitHub
+                GITHUB
               </a>
             </li>
           )}
           {linkedin && (
             <li className={classes.item}>
               <a className={classes.link} href={linkedin}>
-                LinkedIn
+                LINKEDIN
               </a>
             </li>
           )}
-          {!noBlog && (
+          {blog.length > 0 && (
             <li className={classes.item}>
-              <Link className={classes.link} to="/blog">
-                Blog
-              </Link>
+              <a className={classes.link} href={blog}>
+              BLOG
+              </a>
+            </li>
+          )}
+          {email.length > 0 && (
+            <li className={classes.link}>
+              {email}
             </li>
           )}
         </ul>

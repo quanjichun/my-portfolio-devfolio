@@ -95,6 +95,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type SectionProjectDes {
+      duration: String
       content: [String]!
       contribution: [String]!
       skills: [String]!

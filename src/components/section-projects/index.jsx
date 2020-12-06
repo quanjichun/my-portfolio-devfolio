@@ -7,7 +7,7 @@ const classes = {
   name: 'font-semibold text-gray-900 pb-1',
   description: 'text-md text-gray-600 font-light text-base',
   ul: 'list-disc pl-12',
-  itemTitle: 'font-bold'
+  itemTitle: 'font-bold mr-2',
 };
 
 const ProjectItem = ({ name, values }) =>
@@ -24,9 +24,17 @@ const ProjectItem = ({ name, values }) =>
     ''
   );
 
+const ProjectSimpleItem = ({ name, value }) => (
+  <div>
+    <span className={classes.itemTitle}>{name}</span>
+    <span>{value}</span>
+  </div>
+);
+
 const Project = ({ project }) => {
-  const { name, link, description } = project;
+  const { name, link, duration, description } = project;
   const { content, contribution, skills, achivement } = description;
+  console.log(duration);
   return (
     <div className={classes.wrapper}>
       <h3
@@ -37,6 +45,7 @@ const Project = ({ project }) => {
         {name}
       </h3>
       <div className={classes.description}>
+        <ProjectSimpleItem name="Duration: " value={`[ ${duration} ]`} />
         <ProjectItem name="Description: " values={content} />
         <ProjectItem name="Contribution: " values={contribution} />
         <ProjectItem name="Skills: " values={skills} />

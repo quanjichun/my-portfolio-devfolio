@@ -30,14 +30,14 @@ module.exports = {
       '팀내 신기술 전파자',
       '신입사원 트레이너',
       '셀리더',
-      '코딩이 좋아요',
       'LG전자',
       '스펙트럼이 넓은 Full-stack 개발자가 목표',
     ],
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'ID 업무 디지털화(DX) 시스템',
+        name: '1. ID 업무 디지털화(DX) 시스템',
+        duration: '2020.01 ~ 진행 중',
         description: {
           content: [
             '개발자/팀 이슈관리, 프로젝트 개발관리, 업무보고, 업무 데이터(email, voc, rms 등) 수집/분석/visualization, Task 관리, \
@@ -58,6 +58,57 @@ module.exports = {
             '현재 ID 개발담당에서 해당 업무시스템을 사용하고 있음',
             'Agile 개발방식과 web fullstack 개발경험을 얻었음.',
             'GraphQL, Elasticsearch와 같은 up-to-date 개발기술을 익혔음',
+          ],
+        },
+        link: '',
+      },
+      {
+        name: '3. Hotel Mode App/관련 service 구현 및 유지보수',
+        duration: '2017.07 ~ 2019.12',
+        description: {
+          content: [
+            '개발자/팀 이슈관리, 프로젝트 개발관리, 업무보고, 업무 데이터(email, voc, rms 등) 수집/분석/visualization, Task 관리, \
+            매출정보 visualization 등 기능을 포함하고 있는 종합업무 시스템',
+          ],
+          contribution: [
+            '프로젝트(모델) 개발 관리시스템 구현',
+            '업무보고 시스템 구현',
+            'Elasticsearch 기반 통합검색 구현',
+            'Task 관리 시스템 구현',
+          ],
+          skills: [
+            'Front-end: React, Material-UI, CKEditor, styled-components',
+            'Back-end: GraphQL, Koa, MySql, Sequelize',
+            'Others: Elasticsearch, Python, JTest',
+          ],
+          achivement: [
+            '현재 ID 개발담당에서 해당 업무시스템을 사용하고 있음',
+            'Agile 개발방식과 web fullstack 개발경험을 얻었음.',
+            'GraphQL, Elasticsearch와 같은 up-to-date 개발기술을 익혔음',
+          ],
+        },
+        link: '',
+      },
+      {
+        name: '3. Group Manager Signage/Hotel App',
+        duration: '2016.11 ~ 2017.03, 2019.02 ~ 2019.03(Refactoring)',
+        description: {
+          content: [
+            '동일한 네트워크 망에 있는 TV/Signage(Monitor) 를 그룹으로 묶어서 관리하고 Data Cloning/Content Distribution(동영상 배포)를 할 수 있는 App',
+          ],
+          contribution: [
+            'UX 시나리오 설계(UX 담당자와 협업)',
+            'DB 설계 및 App 구현',
+            '서비스 API 설계(서비스 담당자와 협업)'
+          ],
+          skills: [
+            'Enyo(webOS TV UI framework)',
+            'Enact(React based webOS TV UI framework)',
+            'Redux'
+          ],
+          achivement: [
+            '2017년 Signage, 부분 Hotel TV부터 최신 모델까지 계속 탑재되어 출시하고 있음',
+            '처음으로 한개 project를 리드하여 개발하였고 최종 출시하였음',
           ],
         },
         link: '',

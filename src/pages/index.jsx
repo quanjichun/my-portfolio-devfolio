@@ -50,6 +50,7 @@ export const pageQuery = graphql`
         email
         projects {
           name
+          duration
           description {
             content
             contribution

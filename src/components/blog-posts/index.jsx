@@ -10,7 +10,7 @@ const BlogPosts = ({ posts }) => {
         <SummaryItem
           key={post.node.fields.slug}
           name={post.node.frontmatter.title}
-          description={post.node.frontmatter.description}
+          description={[post.node.frontmatter.description]}
           link={post.node.fields.slug}
           internal
         />

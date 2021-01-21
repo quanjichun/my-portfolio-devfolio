@@ -50,9 +50,9 @@ module.exports = {
             'Task 관리 시스템 구현',
           ],
           skills: [
-            'Front-end: React, Material-UI, CKEditor, styled-components',
-            'Back-end: GraphQL, Koa, MySql, Sequelize',
-            'Others: Elasticsearch, Python, JTest',
+            'Front-end: React, Material-UI, CKEditor, styled-components, Apollo Client(GraphQL)',
+            'Back-end: ApolloServer(GraphQL), Koa, MySql, Sequelize',
+            'Others: Elasticsearch, Python, Jest',
           ],
           achivement: [
             '현재 ID 개발담당에서 해당 업무시스템을 사용하고 있음',
